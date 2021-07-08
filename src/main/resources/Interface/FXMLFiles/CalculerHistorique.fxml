@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="719.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.HistoriqueObjetControlleur">
+    <children>
+        <TableView fx:id="TableHistorique" layoutX="34.0" layoutY="157.0" prefHeight="355.0" prefWidth="659.0" style="-fx-background-color: #E6E6FA;">
+            <columns>
+                <TableColumn fx:id="etat_objet" prefWidth="102.0" text="Etat" />
+                <TableColumn fx:id="nomObjet" prefWidth="88.0" text="Nom" />
+                <TableColumn fx:id="droitAcces" prefWidth="122.0" text="Droit d'acces" />
+                <TableColumn fx:id="dateAction" prefWidth="97.0" text="date d'action" />
+                <TableColumn fx:id="typeOperation" prefWidth="75.0" text="type d'operation" />
+                <TableColumn fx:id="special" prefWidth="75.0" text="special" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button layoutX="296.0" layoutY="520.0" mnemonicParsing="false" onAction="#GenererHistorique" style="-fx-background-color: transparent; -fx-underline: true;" text="Télécharger Historique">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <DatePicker fx:id="DateDeb" editable="false" layoutX="117.0" layoutY="102.0" prefHeight="40.0" prefWidth="175.0" promptText="Date de debut" />
+        <DatePicker fx:id="DateFin" editable="false" layoutX="309.0" layoutY="102.0" prefHeight="40.0" prefWidth="175.0" promptText="Date de fin" />
+        <Button fx:id="consulterHistorique" layoutX="496.0" layoutY="102.0" mnemonicParsing="false" onAction="#consulterClicked" prefHeight="40.0" prefWidth="125.0" text="Consulter Historique" />
+        <AnchorPane prefHeight="40.0" prefWidth="719.0" style="-fx-background-color: #1E90FF;" />
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="684.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icons8-close-window-48.png" />
+            </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </ImageView>
+        <TextField fx:id="IDObjet" editable="false" layoutX="34.0" layoutY="519.0" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: transparent;" visible="false" />
+      <Label layoutX="97.0" layoutY="48.0" prefHeight="46.0" prefWidth="542.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

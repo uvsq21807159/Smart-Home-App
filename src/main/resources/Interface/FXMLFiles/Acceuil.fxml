@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Acceuil" prefHeight="560.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.GestionObjetControlleur">
+   <children>
+      <StackPane fx:id="StackPiece" layoutX="71.0" layoutY="121.0" prefHeight="60.0" prefWidth="220.0" style="-fx-background-color: #6495ED;" />
+      <StackPane fx:id="StackObjet" layoutX="22.0" layoutY="212.0" prefHeight="300.0" prefWidth="317.0" style="-fx-background-color: #6495ED;" />
+      <StackPane fx:id="StackReglage" layoutX="348.0" layoutY="90.0" prefHeight="454.0" prefWidth="350.0" style="-fx-background-color: #6495ED;" />
+      <Button fx:id="droite" layoutX="297.0" layoutY="121.0" mnemonicParsing="false" onAction="#changerPiece" prefHeight="60.0" prefWidth="34.0" style="-fx-background-color: #6495ED;" text="&gt;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button fx:id="gauche" layoutX="31.0" layoutY="121.0" mnemonicParsing="false" onAction="#changerPiece" prefHeight="60.0" prefWidth="34.0" style="-fx-background-color: #6495ED;" text="&lt;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="31.0" layoutY="90.0" mnemonicParsing="false" onAction="#ajouterPieceClicked" prefHeight="26.0" prefWidth="300.0" style="-fx-background-color: #6495ED;" text="Ajouter Piece" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="22.0" layoutY="519.0" mnemonicParsing="false" onAction="#ajouterObjetClicked" prefHeight="26.0" prefWidth="318.0" style="-fx-background-color: #6495ED;" text="Ajouter Objet" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <AnchorPane layoutX="32.0" layoutY="10.0" prefHeight="60.0" prefWidth="666.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Label fx:id="consoH" layoutX="572.0" layoutY="19.0" text="0" />
+            <Label layoutX="388.0" layoutY="19.0" prefHeight="17.0" prefWidth="180.0" text="Consommation horraire globale : " />
+            <Button layoutX="244.0" layoutY="5.0" mnemonicParsing="false" onAction="#LancerOptimisation" prefHeight="50.0" prefWidth="125.0" style="-fx-background-color: #7fffd4;" text="Lancer Optimisation" />
+         </children>
+      </AnchorPane>
+      <JFXToggleButton fx:id="ToggleEconomique" layoutX="31.0" layoutY="10.0" onAction="#economiqueClicked" prefHeight="58.0" prefWidth="187.0" text="Mode Economique" />
+   </children>
+</AnchorPane>

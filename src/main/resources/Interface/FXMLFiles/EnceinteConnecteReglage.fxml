@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="350.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="53.0" prefWidth="350.0">
+         <children>
+            <JFXToggleButton prefHeight="45.0" prefWidth="154.0" text="ON/OFF" />
+            <TextField>
+               <HBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="27.0" style="-fx-background-color: #6495ED;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-approval-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="137.0" text="Consommation Horaire :">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="5.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" right="3.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="27.0" style="-fx-background-color: #6495ED;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-approval-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="350.0" />
+      <HBox prefHeight="50.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="137.0" text="Droit D'accés :">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="5.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" right="3.0" top="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="27.0" style="-fx-background-color: #6495ED;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-approval-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="137.0" text="Volume : ">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="5.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Slider prefHeight="14.0" prefWidth="149.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" right="3.0" top="25.0" />
+               </HBox.margin>
+            </Slider>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="27.0" style="-fx-background-color: #6495ED;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-approval-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="137.0" text="Seuil de consommation :">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="5.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" right="3.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="27.0" style="-fx-background-color: #6495ED;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-approval-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="137.0" text="Durre d'enregistrement :">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="5.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" right="3.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="27.0" style="-fx-background-color: #6495ED;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-approval-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="333.0" text="Consulter historique">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
